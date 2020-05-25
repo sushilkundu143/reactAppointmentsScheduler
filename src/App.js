@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+import React, {PureComponent} from 'react';
+import Paper from '@material-ui/core/Paper';
+import { ViewState } from '@devexpress/dx-react-scheduler';
+import {
+  Scheduler,
+  WeekView,
+  Appointments,
+  AllDayPanel,
+} from '@devexpress/dx-react-scheduler-material-ui';
+
+import { appointments } from '../../../demo-data/appointments';
+
+export default class App extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data: appointments,
+      currentDate: new Date('2020-06-27'),
+    };
+  }
+
+  render() {
+    const { data, currentDate } = this.state;
+
+    return (
+      <Paper>
+        <Scheduler
+          data={data}
+          height={660}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          <ViewState
+            defaultCurrentDate={currentDate}
+          />
+          <WeekView
+            startDayHour={9}
+            endDayHour={19}
+          />
+          <Appointments />
+          <AllDayPanel />
+        </Scheduler>
+      </Paper>
+    );
+  }
 }
-
-export default App;

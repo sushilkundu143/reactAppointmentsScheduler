@@ -1,5 +1,4 @@
-
-import React, {PureComponent} from 'react';
+import * as React from 'react';
 import Paper from '@material-ui/core/Paper';
 import { ViewState } from '@devexpress/dx-react-scheduler';
 import {
@@ -9,15 +8,15 @@ import {
   AllDayPanel,
 } from '@devexpress/dx-react-scheduler-material-ui';
 
-import { appointments } from '../../../demo-data/appointments';
+import { appointments } from './demo-data/appointments';
 
-export default class App extends PureComponent {
+export default class App extends React.PureComponent {
   constructor(props) {
     super(props);
 
     this.state = {
       data: appointments,
-      currentDate: new Date('2020-06-27'),
+      currentDate: new Date('2018-06-27'),
     };
   }
 

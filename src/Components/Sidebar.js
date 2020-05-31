@@ -1,6 +1,5 @@
-import React, { PureComponent } from 'react';
-import './Sidebar.css';
-import Sidebaritems from './Sidebaritems'
+import React, { PureComponent } from 'react'
+import './Sidebar.css'
 
 class Sidebar extends PureComponent {
     constructor(){
@@ -39,7 +38,7 @@ class Sidebar extends PureComponent {
             </li>
         ))
         return (
-            <aside className="menu ">
+            <aside className="menu">
                 <ul className="menu-list">
                     {menutiems}
                 </ul>

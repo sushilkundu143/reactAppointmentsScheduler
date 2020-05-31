@@ -9,3 +9,31 @@
       padding-left: 12px;
       padding-right: 12px;
   }
+  .border-r:after {
+    height: 40%;
+    border-right: 1px solid white;
+    position: absolute;
+    content: "";
+    right: 0;
+  }
+  .custom {
+    width: 200px;
+    height: 2rem !important;
+    border: none;
+  }
+  .custom select {
+    width: 100%;
+    width: 100%;
+    color: darkgray !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+}
+.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link {
+    background-color: transparent !important;
+}

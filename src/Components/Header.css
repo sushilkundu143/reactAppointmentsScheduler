@@ -1,0 +1,11 @@
+:root {
+    --twilight-blue: #094e87;
+  }
+  
+  .theme-header {
+      background-color: var(--twilight-blue) !important;
+  }
+  .padding {
+      padding-left: 12px;
+      padding-right: 12px;
+  }

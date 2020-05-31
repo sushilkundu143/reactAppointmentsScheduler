@@ -1,0 +1,6 @@
+.buttons.has-addons button:first-child {
+    border-radius: 20px 0 0 20px !important;
+}
+.buttons.has-addons button:last-child {
+    border-radius: 0 20px 20px 0 !important;
+}

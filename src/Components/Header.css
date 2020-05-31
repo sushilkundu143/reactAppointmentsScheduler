@@ -10,7 +10,7 @@
       padding-right: 12px;
   }
   .border-r:after {
-    height: 40%;
+    height: 30%;
     border-right: 1px solid white;
     position: absolute;
     content: "";

@@ -405,6 +405,10 @@ nav.navbar {
     min-height: 100vh;
 }
 
+body, button, input, select, textarea  {
+    font-family: 'Lato', sans-serif;
+}
+
 #page-content {
     padding: 2rem;
 }

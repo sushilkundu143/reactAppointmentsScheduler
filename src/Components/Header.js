@@ -96,19 +96,10 @@ class Header extends PureComponent {
                             </a>
                             <div className="navbar-dropdown is-boxed">
                                 <a className="navbar-item" href="">
-                                    Overview
+                                    Sydney Clinic 1
                                 </a>
                                 <a className="navbar-item" href="">
-                                    Modifiers
-                                </a>
-                                <a className="navbar-item" href="">
-                                    Columns
-                                </a>
-                                <a className="navbar-item" href="">
-                                    Layout
-                                </a>
-                                <a className="navbar-item" href="">
-                                    Form
+                                    Sydney Clinic 2
                                 </a>
                             </div>
                         </div>
